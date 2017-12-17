@@ -1,14 +1,16 @@
 import React from 'react';
 import { StyleSheet, Button, ScrollView, Text } from 'react-native';
-import { StackNavigator,TabNavigator } from 'react-navigation';
+import { StackNavigator, TabNavigator } from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import HomeScreen from './containers/HomeScreen'
-import PersonScreen from './containers/PersonScreen'
-import SearchScreen from './containers/SearchScreen'
+import Home from './containers/Home'
+import Person from './containers/Person'
+import Search from './containers/Search'
+import NewArticle from './containers/NewArticle'
+import Collection from './containers/Collection'
 const AppTabNavigator = TabNavigator(
 	{
 		HomeTab: {
-			screen: HomeScreen,
+			screen: Home,
 			navigationOptions: {
 				tabBarIcon: () => (
 					<Ionicons
@@ -19,7 +21,7 @@ const AppTabNavigator = TabNavigator(
 			}
 		},
 		SearchTab: {
-			screen: SearchScreen,
+			screen: Search,
 			navigationOptions: {
 				tabBarIcon: () => (
 					<Ionicons
@@ -29,8 +31,30 @@ const AppTabNavigator = TabNavigator(
 				)
 			}
 		},
+		NewArticleTab: {
+			screen: NewArticle,
+			navigationOptions: {
+				tabBarIcon: () => (
+					<Ionicons
+						name='ios-camera'
+						size={26}
+					/>
+				)
+			}
+		},
+		CollectionTab: {
+			screen: Collection,
+			navigationOptions: {
+				tabBarIcon: () => (
+					<Ionicons
+						name='ios-bookmark'
+						size={26}
+					/>
+				)
+			}
+		},
 		PersonTab: {
-			screen: PersonScreen,
+			screen: Person,
 			navigationOptions: {
 				tabBarIcon: () => (
 					<Ionicons

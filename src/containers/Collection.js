@@ -10,21 +10,23 @@ import {
 import styled from 'styled-components/native';
 import { StackNavigator } from 'react-navigation';
 
-class SearchScreen extends Component {
-    render() {
+class Collection  extends Component {
+    render(){
         return (
-            <Text>dsadsadas</Text>
+            <Text>Collection</Text>
         )
     }
+
 }
 export default StackNavigator(
     {
         Person: {
-            screen: SearchScreen,
-            path: '/search',
+            screen: Collection,
+            path: '/collection',
             navigationOptions: ({navigation}) => ({
-                title: '搜尋',
+                title: '收藏',
             })
         }
     }
 )
+

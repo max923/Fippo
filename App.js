@@ -1,5 +1,4 @@
 import AppNavigator from './src/AppNavigator'
-import Home from './src/containers/HomeScreen'
 import React from 'react';
 import { AppRegistry,View,Text } from 'react-native';
 import { ApolloProvider } from 'react-apollo';
@@ -14,7 +13,7 @@ const client = new ApolloClient({
 });
 const App = () => (
       <ApolloProvider client={client}>
-            <Home/>
+            <AppNavigator/>
       </ApolloProvider>
 )
-export default App
+export default AppNavigator
