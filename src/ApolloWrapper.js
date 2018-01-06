@@ -11,11 +11,6 @@ function getApolloClient() {
 	const client = new ApolloClient({
 		link: new HttpLink({ uri: `https://api.yelp.com/v3/graphql` }),
 		cache: new InMemoryCache(),
-		opts: {
-			headers: {
-				"Authorization": "Bearer https://api.yelp.com/v3/businesses/search?term=food&location=Taiwan",
-			}
-		}
 	});
 	return client;
 }

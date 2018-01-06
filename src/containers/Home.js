@@ -27,7 +27,7 @@ class Home extends Component {
     }
     componentDidMount() {
         const URL = `https://api.yelp.com/v3/businesses/search?term=food&location=Taiwan`
-        const token = '3tPiAku8SDQ_Rn347JVcBO9MbV98NcZVxI7M02YhNzOsIx7wV3t6vTT5I7Y4heMXhbS6kG_hCyTQxiwPs_NygZHJLAEje4PvaNXCL8h-ZZJe9K7PTnJzisC4I9QLWnYx'
+        const token = ''
         axios.get(URL, {
             headers: {
                 Authorization: `Bearer ${token}`

@@ -68,8 +68,8 @@ const styles = {
         height: 35,
         padding: 0,
         margin: 0,
-        borderColor: 'red',
-        borderWidth: 1,
+        // borderColor: 'red',
+        // borderWidth: 1,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
@@ -85,8 +85,8 @@ const CardWrapper = styled.View`
     background-color: #fff;
     margin-bottom: 5px;
     padding-bottom: 10px;
-    borderBottomColor: #d6d6d6;
-    borderBottomWidth: 1px;
+    /* borderBottomColor: #d6d6d6;
+    borderBottomWidth: 1px; */
     shadow-radius: 2;
 `;
 const CardImage = styled.Image`
@@ -136,6 +136,6 @@ const ButtomBarWrapper = styled.View`
     /* borderColor: ${Colors.backGray};
     borderWidth: 1px;
     border-radius: 8px; */
-    border: solid 1px blue
+    /* border: solid 1px blue */
 `
 

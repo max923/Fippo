@@ -23,7 +23,7 @@ class NewArticle extends Component {
     }
     render() {
         return (
-            <ImagePicker/>
+            <Camera/>
         )
     }
 }
